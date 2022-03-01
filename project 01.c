@@ -24,7 +24,7 @@ int menu()
 }
 int main()
 {
-        printf("COUNTY LIBRARY SYSTEM\n");
+        printf("COUNTY LIBRARY MANAGEMENT SYSTEM\n");
         printf("WELCOME MR JOHN\n");
         printf("You selected action%d",menu());
         return 0;

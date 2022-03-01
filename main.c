@@ -18,15 +18,35 @@ int menu()
         printf("4. Add new book\n");
         printf("Your action\n");
         scanf("%d",&action);
+        if("action < 1 || action >4");{
+           printf("invalid action. Try Again\n");
+        }
         return action;
 
-
 }
+void execute_action(int action){
+     switch (action){
+        case 1:
+          printf("adding a new patron\n");
+          break;
+          case 2:
+           printf("list of all patrons\n");
+          break;
+          case 3:
+           printf("list of all books\n");
+          break;
+          case 4:
+           printf("adding a new book\n");
+          break;
+         default: printf("Invalid_action.\n");
+     }
+}
+
 int main()
 {
         printf("COUNTY LIBRARY SYSTEM\n");
         printf("WELCOME MR JOHN\n");
-        printf("You selected action%d",menu());
+        execute_action,(menu());
         return 0;
 }
 
